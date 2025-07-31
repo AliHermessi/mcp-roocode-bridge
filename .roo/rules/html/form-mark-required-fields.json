@@ -1,0 +1,13 @@
+{
+  "rule_name": "form-mark-required-fields",
+  "description": "Required fields must be clearly marked with an asterisk.",
+  "language": "html",
+  "scope": "workspace",
+  "rule_content": {
+    "required-field-marker": "*"
+  },
+  "categories": [
+    "accessibility",
+    "structure"
+  ]
+}

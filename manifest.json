@@ -1,0 +1,184 @@
+{
+  "name": "mcp-roocode-bridge",
+  "version": "1.0.0",
+  "description": "MCP server for applying roocode rules and processing messages",
+  "tools": [
+    {
+      "name": "apply_rule",
+      "description": "Applies a RooCode rule to a specific scope and language.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "scope": {
+            "type": "string",
+            "description": "Rule scope: 'global', 'workspace', or specific mode (e.g., 'rules-design-mode')."
+          },
+          "language": {
+            "type": "string",
+            "description": "Target language(s) (e.g., 'js', 'html', 'general'). Multiple languages allowed using comma separation (e.g., 'js,java,c++')."
+          },
+          "rule_name": {
+            "type": "string",
+            "description": "Short identifier of the rule (e.g., 'no-inline-style', 'navbar-color-enforce')."
+          },
+          "description": {
+            "type": "string",
+            "description": "Summary of what the rule enforces."
+          },
+          "rule_content": {
+            "type": "object",
+            "description": "JSON object describing the enforcement logic or blocked patterns."
+          },
+          "categories": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Array of categories to classify the rule (e.g., ['style', 'structure'])."
+          }
+        },
+        "required": [
+          "scope",
+          "language",
+          "rule_name",
+          "description",
+          "rule_content",
+          "categories"
+        ]
+      }
+    },
+    {
+      "name": "process_message",
+      "description": "Processes a user message by sending it to an external AI",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "message": {
+            "type": "string",
+            "description": "The user's message to process"
+          }
+        },
+        "required": ["message"]
+      }
+    },
+    {
+      "name": "analyze_file",
+      "description": "Analyzes a file and extracts rules from its content",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "fullfilepath": {
+            "type": "string",
+            "description": "The full path to the file to analyze"
+          }
+        },
+        "required": ["fullfilepath"]
+      }
+    },
+    {
+      "name": "ai_gateway",
+      "description": "Calls the AI gateway with the given action and parameters.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "action": {
+            "type": "string",
+            "description": "The action to perform."
+          },
+          "file_path": {
+            "type": "string",
+            "description": "The path to the file to be processed.",
+            "optional": true
+          },
+          "user_message": {
+            "type": "string",
+            "description": "A message from the user.",
+            "optional": true
+          },
+          "rules": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": true
+            },
+            "description": "An array of rules to apply.",
+            "optional": true
+          },
+          "language": {
+            "type": "string",
+            "description": "The language of the code.",
+            "optional": true
+          },
+          "scope": {
+            "type": "string",
+            "description": "The scope of the operation.",
+            "optional": true
+          },
+          "level": {
+            "type": "number",
+            "description": "The level of the analysis.",
+            "optional": true
+          }
+        },
+        "required": ["action"]
+      }
+    },
+    {
+      "name": "ai_gateway_handler",
+      "description": "Handles multiple ai_gateway calls.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "inputs": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "action": {
+                  "type": "string",
+                  "description": "The action to perform."
+                },
+                "file_path": {
+                  "type": "string",
+                  "description": "The path to the file to be processed.",
+                  "optional": true
+                },
+                "user_message": {
+                  "type": "string",
+                  "description": "A message from the user.",
+                  "optional": true
+                },
+                "rules": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": true
+                  },
+                  "description": "An array of rules to apply.",
+                  "optional": true
+                },
+                "language": {
+                  "type": "string",
+                  "description": "The language of the code.",
+                  "optional": true
+                },
+                "scope": {
+                  "type": "string",
+                  "description": "The scope of the operation.",
+                  "optional": true
+                },
+                "level": {
+                  "type": "number",
+                  "description": "The level of the analysis.",
+                  "optional": true
+                }
+              },
+              "required": ["action"]
+            }
+          }
+        },
+        "required": ["inputs"]
+      }
+    }
+  ]
+}

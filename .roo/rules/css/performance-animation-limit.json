@@ -1,0 +1,12 @@
+{
+  "rule_name": "performance-animation-limit",
+  "description": "Avoid animations that exceed 300ms.",
+  "language": "css",
+  "scope": "workspace",
+  "rule_content": {
+    "max-animation-duration": "300ms"
+  },
+  "categories": [
+    "performance"
+  ]
+}

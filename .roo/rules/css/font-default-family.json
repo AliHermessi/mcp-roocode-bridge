@@ -1,0 +1,13 @@
+{
+  "rule_name": "font-default-family",
+  "description": "Use 'Roboto' as the default font family, fallback to 'Arial', sans-serif.",
+  "language": "css",
+  "scope": "workspace",
+  "rule_content": {
+    "font-family": "Roboto, Arial, sans-serif"
+  },
+  "categories": [
+    "style",
+    "company-branding"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "rule_name": "nav-company-logo",
+  "description": "The company logo must appear on the left side of the navigation bar.",
+  "language": "html",
+  "scope": "workspace",
+  "rule_content": {
+    "logo-position": "left"
+  },
+  "categories": [
+    "structure",
+    "company-branding"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "rule_name": "ui-principle-brand-identity",
+  "description": "Designs must align with the Acme Corp brand identity.",
+  "language": "general",
+  "scope": "workspace",
+  "rule_content": {},
+  "categories": [
+    "company-branding"
+  ]
+}

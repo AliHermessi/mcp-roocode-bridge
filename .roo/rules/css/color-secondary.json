@@ -1,0 +1,13 @@
+{
+  "rule_name": "color-secondary",
+  "description": "Use Light Gray (#f5f5f5) as the secondary color.",
+  "language": "css",
+  "scope": "workspace",
+  "rule_content": {
+    "secondary-color": "#f5f5f5"
+  },
+  "categories": [
+    "style",
+    "company-branding"
+  ]
+}

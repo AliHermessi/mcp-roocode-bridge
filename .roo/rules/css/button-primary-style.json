@@ -1,0 +1,13 @@
+{
+  "rule_name": "button-primary-style",
+  "description": "Primary action buttons are blue with white text.",
+  "language": "css",
+  "scope": "workspace",
+  "rule_content": {
+    "primary-button-color": "blue",
+    "primary-button-text-color": "white"
+  },
+  "categories": [
+    "style"
+  ]
+}

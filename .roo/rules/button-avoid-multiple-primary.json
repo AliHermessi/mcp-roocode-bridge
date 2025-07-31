@@ -1,0 +1,10 @@
+{
+  "rule_name": "button-avoid-multiple-primary",
+  "description": "Avoid using multiple primary buttons on the same view.",
+  "language": "general",
+  "scope": "workspace",
+  "rule_content": {},
+  "categories": [
+    "style"
+  ]
+}

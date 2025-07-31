@@ -1,0 +1,13 @@
+{
+  "rule_name": "form-validation-message-placement",
+  "description": "Display validation messages below the input field.",
+  "language": "html",
+  "scope": "workspace",
+  "rule_content": {
+    "validation-message-position": "below"
+  },
+  "categories": [
+    "accessibility",
+    "structure"
+  ]
+}

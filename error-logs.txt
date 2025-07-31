@@ -1,0 +1,28 @@
+[2025-07-31T08:21:33.072Z] [INFO] db.service.js loaded
+
+[2025-07-31T08:21:33.105Z] [INFO] db.service.js loaded
+
+[2025-07-31T08:21:33.103Z] [INFO] API Key: glama_eyJhcGlLZXkiOiIyNGYxMGI3NC0wYTAxLTRhZmYtODliYi05ZDk1Nzg5OGZmNGIifQ
+
+[2025-07-31T08:21:33.103Z] [INFO] Default Conversation ID: 123
+
+[2025-07-31T08:21:33.104Z] [INFO] MCP Roocode Bridge server is starting...
+
+[2025-07-31T08:21:33.125Z] [INFO] MCP Roocode Bridge server running on stdio
+
+[2025-07-31T08:21:33.103Z] [INFO] Model: google-vertex/gemini-2.0-flash-thinking-exp-01-21
+
+[2025-07-31T08:21:33.103Z] [INFO] AI URL: https://glama.ai/api/gateway/openai/v1/chat/completions
+
+[2025-07-31T08:21:33.129Z] [INFO] Model: google-vertex/gemini-2.0-flash-thinking-exp-01-21
+
+[2025-07-31T08:21:33.132Z] [INFO] Default Conversation ID: 123
+
+[2025-07-31T08:21:33.131Z] [INFO] AI URL: https://glama.ai/api/gateway/openai/v1/chat/completions
+
+[2025-07-31T08:21:33.129Z] [INFO] API Key: glama_eyJhcGlLZXkiOiIyNGYxMGI3NC0wYTAxLTRhZmYtODliYi05ZDk1Nzg5OGZmNGIifQ
+
+[2025-07-31T08:21:33.132Z] [INFO] MCP Roocode Bridge server is starting...
+
+[2025-07-31T08:21:33.145Z] [INFO] MCP Roocode Bridge server running on stdio
+

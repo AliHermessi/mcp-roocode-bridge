@@ -1,0 +1,17 @@
+{
+  "rule_name": "nav-required-links",
+  "description": "The main navigation must always include Home, Dashboard, Profile, and Support links.",
+  "language": "html",
+  "scope": "workspace",
+  "rule_content": {
+    "required-links": [
+      "Home",
+      "Dashboard",
+      "Profile",
+      "Support"
+    ]
+  },
+  "categories": [
+    "structure"
+  ]
+}

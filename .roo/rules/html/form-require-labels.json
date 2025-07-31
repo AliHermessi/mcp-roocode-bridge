@@ -1,0 +1,13 @@
+{
+  "rule_name": "form-require-labels",
+  "description": "All form inputs must have labels.",
+  "language": "html",
+  "scope": "workspace",
+  "rule_content": {
+    "require-labels": true
+  },
+  "categories": [
+    "accessibility",
+    "structure"
+  ]
+}

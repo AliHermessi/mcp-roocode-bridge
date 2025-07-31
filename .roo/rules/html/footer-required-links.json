@@ -1,0 +1,16 @@
+{
+  "rule_name": "footer-required-links",
+  "description": "The footer must include Terms of Service, Privacy Policy, and Contact Us links.",
+  "language": "html",
+  "scope": "workspace",
+  "rule_content": {
+    "required-links": [
+      "Terms of Service",
+      "Privacy Policy",
+      "Contact Us"
+    ]
+  },
+  "categories": [
+    "structure"
+  ]
+}

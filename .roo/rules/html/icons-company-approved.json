@@ -1,0 +1,13 @@
+{
+  "rule_name": "icons-company-approved",
+  "description": "Only use icons from the company-approved Acme Icons set.",
+  "language": "html",
+  "scope": "workspace",
+  "rule_content": {
+    "icon-set": "Acme Icons"
+  },
+  "categories": [
+    "company-branding",
+    "style"
+  ]
+}

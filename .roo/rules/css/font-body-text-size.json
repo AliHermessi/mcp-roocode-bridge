@@ -1,0 +1,12 @@
+{
+  "rule_name": "font-body-text-size",
+  "description": "Body text font size should be 16px.",
+  "language": "css",
+  "scope": "workspace",
+  "rule_content": {
+    "body-font-size": "16px"
+  },
+  "categories": [
+    "style"
+  ]
+}

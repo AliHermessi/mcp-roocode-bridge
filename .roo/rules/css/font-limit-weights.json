@@ -1,0 +1,12 @@
+{
+  "rule_name": "font-limit-weights",
+  "description": "Avoid using more than two font weights per page.",
+  "language": "css",
+  "scope": "workspace",
+  "rule_content": {
+    "max-font-weights": 2
+  },
+  "categories": [
+    "style"
+  ]
+}

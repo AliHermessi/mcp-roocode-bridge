@@ -1,0 +1,12 @@
+{
+  "rule_name": "performance-lazy-load-images",
+  "description": "Lazy load all images not visible on initial viewport.",
+  "language": "html",
+  "scope": "workspace",
+  "rule_content": {
+    "lazy-load-images": true
+  },
+  "categories": [
+    "performance"
+  ]
+}

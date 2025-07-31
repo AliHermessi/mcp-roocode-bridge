@@ -1,0 +1,11 @@
+{
+  "tool_name": "apply_rule",
+  "arguments": {
+    "scope": "workspace",
+    "language": "javascript",
+    "rule": {
+      "title": "No require",
+      "content": "dont use const require to import."
+    }
+  }
+}

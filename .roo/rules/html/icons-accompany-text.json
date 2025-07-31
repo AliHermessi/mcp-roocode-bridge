@@ -1,0 +1,13 @@
+{
+  "rule_name": "icons-accompany-text",
+  "description": "Icons must accompany text on buttons.",
+  "language": "html",
+  "scope": "workspace",
+  "rule_content": {
+    "icon-text-association": "buttons"
+  },
+  "categories": [
+    "accessibility",
+    "style"
+  ]
+}

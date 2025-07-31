@@ -1,0 +1,12 @@
+{
+  "rule_name": "nav-responsive",
+  "description": "Navigation should be responsive, collapsing into a hamburger menu on mobile.",
+  "language": "css",
+  "scope": "workspace",
+  "rule_content": {
+    "responsive-behavior": "hamburger-menu"
+  },
+  "categories": [
+    "structure"
+  ]
+}

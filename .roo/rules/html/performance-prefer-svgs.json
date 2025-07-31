@@ -1,0 +1,13 @@
+{
+  "rule_name": "performance-prefer-svgs",
+  "description": "Prefer SVGs over PNGs for scalable graphics.",
+  "language": "html",
+  "scope": "workspace",
+  "rule_content": {
+    "preferred-image-format": "svg"
+  },
+  "categories": [
+    "performance",
+    "style"
+  ]
+}
