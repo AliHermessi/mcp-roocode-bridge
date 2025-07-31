@@ -7,7 +7,7 @@ import * as dotenv from "dotenv";
 dotenv.config({ quiet: true });
 const errorLogPath = path.join(process.cwd(), "mcp-roocode-bridge", "error-logs.txt");
 
-const ai_url = process.env.AI_URL || "http://localhost:4000/v1/chat/completions";
+const ai_url = process.env.AI_URL || "";
 const ai_key = process.env.AI_KEY || "";
 const convId = process.env.CONVERSATION_ID || "123";
 

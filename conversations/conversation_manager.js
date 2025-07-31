@@ -2,7 +2,7 @@ import fs from 'fs/promises';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { ai_context_message } from '../tools/ai_analyze.js';
-const modelName = process.env.MODEL_NAME || 'google-vertex/gemini-2.0-flash-thinking-exp-01-21';
+const modelName = process.env.MODEL_NAME || '';
 
 const __filename = fileURLToPath(import.meta.url);
 const currentDir = path.dirname(__filename);
